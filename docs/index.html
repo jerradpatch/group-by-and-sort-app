@@ -58,6 +58,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<p>See the docs page for the flashy version of this readme:
+				<a href="https://jerradpatch.github.io/group-by-and-sort-app">https://jerradpatch.github.io/group-by-and-sort-app</a></p>
 				<a href="#user-groupby-and-sort-application" id="user-groupby-and-sort-application" style="color: inherit; text-decoration: none;">
 					<h2>User GroupBy and Sort Application</h2>
 				</a>
@@ -84,6 +86,36 @@
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
+				<a href="#how-to-run" id="how-to-run" style="color: inherit; text-decoration: none;">
+					<h3>How to run</h3>
+				</a>
+				<ol>
+					<li><p>install node:
+							if on windows install the exe for node above
+							if on linux, I recommend using NVM,
+						<a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a></p>
+					</li>
+					<li><p>run the application
+							the dist folder is included in the case there is compiling issues.
+						so running </p>
+						<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">app</span>
+</code></pre>
+						<p> should be enough.</p>
+						<p> The npm command gets the files from &quot;./test/fixtures/input&quot; and puts the
+						results in the &quot;./actual_output.txt&quot; file.</p>
+						<p> Your own input files can be used by running</p>
+						<pre><code class="language-bash"><span style="color: #000000">node ./dist/run.js paths=./test/fixtures/input/comma.txt,./test/fixtures/input/pipe.txt,./test/fixtures/input/space.txt,</span>
+</code></pre>
+						<p> node ./dist/run.js paths=&lt;path1&gt;,&lt;path2&gt;,&lt;path3&gt;</p>
+					</li>
+					<li><p>optional: if you would like to build the app before running
+						run </p>
+						<pre><code class="language-bash"><span style="color: #000000">npm run build</span>
+</code></pre>
+					</li>
+				</ol>
+				<p>I spent a while writing unit test and docs, so I hope it all goes well,
+				but if not please feel free to let me know and I will fix it.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
