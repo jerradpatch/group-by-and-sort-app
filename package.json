@@ -1,0 +1,32 @@
+{
+  "name": "group-by-and-sort-app",
+  "version": "1.0.0",
+  "description": "An application to group and sort users",
+  "main": "dist/index.js",
+  "scripts": {
+    "app": "node ./dist/run.js paths=./test/fixtures/input/comma.txt,./test/fixtures/input/pipe.txt,./test/fixtures/input/space.txt",
+    "test": "mocha",
+    "build": "rm -rf ./dist && ./node_modules/.bin/tsc -p ./tsconfig.json",
+    "docs": "npx typedoc"
+  },
+  "author": "jerrad patch",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/fs-extra": "^9.0.11",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.2",
+    "fs-extra": "^10.0.0",
+    "mocha": "^9.0.0",
+    "ts-node": "^10.0.0",
+    "typedoc": "^0.21.0",
+    "typescript": "^4.3.4"
+  },
+  "engines": {
+    "node": ">=14.15.0",
+    "npm": ">=6.14.8"
+  }
+}
